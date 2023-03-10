@@ -13,3 +13,10 @@ async function create(gorev){
     return getById(insertedGorevId);
 }
 
+async function remove(gorevId){
+    await db('Gorevler').where("GorevId",gorevId).del();
+}
+
+module.exports = {
+    getAll,getById,create,remove
+}
