@@ -10,7 +10,7 @@ async function getById(gorevId){
 
 async function create(gorev){
     let insertedGorevId = await db('Gorevler').insert(gorev);
-    return getById(insertedGorevId);
+    return await getById(insertedGorevId);
 }
 
 async function remove(gorevId){
