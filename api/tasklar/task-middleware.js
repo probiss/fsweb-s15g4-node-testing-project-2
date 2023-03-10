@@ -1,5 +1,5 @@
-const gorevModel = require('../gorevler/gorev_model');
-const taskModel = require('../tasklar/task_model');
+const gorevModel = require('../gorevler/gorev-model');
+const taskModel = require('../tasklar/task-model');
 
 const checkTaskFields = async function (req, res, next) {
     try {

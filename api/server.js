@@ -1,8 +1,8 @@
 const express = require('express');
 const server = express();
 
-const gorevRouter = require('./gorevler/gorev_router');
-const taskRouter = require('./tasklar/task_router');
+const gorevRouter = require('./gorevler/gorev-router');
+const taskRouter = require('./tasklar/task-router');
 
 server.use(express.json());
 
